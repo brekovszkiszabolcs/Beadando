@@ -1,0 +1,14 @@
+org\example\model\User.class
+org\example\model\Amoba.class
+org\example\controller\AmobaController.class
+org\example\database\DatabaseManager$ScoreEntry.class
+org\example\controller\Amoba10Controller.class
+org\example\database\DatabaseManager.class
+module-info.class
+org\example\controller\PlayerNamesController.class
+org\example\controller\MainController.class
+org\example\controller\SinglePlayerNameController.class
+org\example\MainApp.class
+org\example\controller\ScoreboardController.class
+org\example\Launcher.class
+org\example\model\Bot.class

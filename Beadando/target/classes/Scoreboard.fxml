@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="15.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.controller.ScoreboardController" style="-fx-background-color: #f4f4f4;">
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+
+    <Label text="SCOREBOARD" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <TableView fx:id="scoreTable" prefHeight="300.0" prefWidth="300.0">
+        <columns>
+            <TableColumn fx:id="nameColumn" text="players name" prefWidth="180.0" />
+            <TableColumn fx:id="scoreColumn" text="win" prefWidth="100.0" />
+        </columns>
+    </TableView>
+
+    <Button text="back" onAction="#handleBack" minWidth="150.0" />
+</VBox>

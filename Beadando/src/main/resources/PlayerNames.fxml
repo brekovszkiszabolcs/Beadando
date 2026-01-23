@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="15.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.controller.PlayerNamesController"
+      style="-fx-background-color: #f4f4f4; -fx-border-color: #2ecc71; -fx-border-width: 3;">
+
+    <padding><Insets bottom="30.0" left="40.0" right="40.0" top="30.0" /></padding>
+
+    <Label text="Páros mérkőzés (1v1)" style="-fx-text-fill: #27ae60; -fx-font-weight: bold;"><font><Font size="22.0" /></font></Label>
+
+    <VBox spacing="5.0">
+        <Label text="1. Játékos neve (X):" style="-fx-font-weight: bold;" />
+        <TextField fx:id="p1NameField" promptText="Név 1..." prefHeight="35.0" />
+    </VBox>
+
+    <VBox spacing="5.0">
+        <Label text="2. Játékos neve (O):" style="-fx-font-weight: bold;" />
+        <TextField fx:id="p2NameField" promptText="Név 2..." prefHeight="35.0" />
+    </VBox>
+
+    <VBox spacing="5.0">
+        <Label text="Pályaméret:" style="-fx-font-weight: bold;" />
+        <ComboBox fx:id="sizeSelector" prefWidth="250.0" prefHeight="35.0" />
+    </VBox>
+
+    <VBox spacing="10.0" alignment="CENTER">
+        <Button minWidth="200.0" prefHeight="45.0" text="PÁRBAJ INDÍTÁSA" onAction="#handleStart"
+                style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-weight: bold;" />
+        <Button minWidth="200.0" prefHeight="35.0" text="Vissza" onAction="#handleBack"
+                style="-fx-background-color: #95a5a6; -fx-text-fill: white;" />
+    </VBox>
+</VBox>

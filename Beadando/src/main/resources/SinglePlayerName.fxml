@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.controller.SinglePlayerNameController"
+      style="-fx-background-color: #f4f4f4; -fx-border-color: #3498db; -fx-border-width: 3;">
+
+    <padding>
+        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+    </padding>
+
+    <Label text="Gép elleni játék" style="-fx-text-fill: #2980b9; -fx-font-weight: bold;">
+        <font>
+            <Font size="22.0" />
+        </font>
+    </Label>
+
+    <VBox spacing="5.0">
+        <Label text="Neved:" style="-fx-font-weight: bold;" />
+        <TextField fx:id="p1NameField" promptText="Írd be a neved..." prefHeight="35.0" />
+    </VBox>
+
+    <VBox spacing="5.0">
+        <Label text="Pályaméret kiválasztása:" style="-fx-font-weight: bold;" />
+        <ComboBox fx:id="sizeSelector" prefWidth="250.0" prefHeight="35.0" />
+    </VBox>
+
+    <VBox spacing="10.0" alignment="CENTER">
+        <Button minWidth="200.0" prefHeight="45.0" text="JÁTÉK INDÍTÁSA" onAction="#handleStart"
+                style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand;" />
+
+        <Button minWidth="200.0" prefHeight="35.0" text="Vissza" onAction="#handleBack"
+                style="-fx-background-color: #95a5a6; -fx-text-fill: white; -fx-cursor: hand;" />
+    </VBox>
+
+</VBox>
